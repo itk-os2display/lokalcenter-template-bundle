@@ -1,0 +1,15 @@
+{
+  "id": "lokalcenter-touch",
+  "type": "screen",
+  "name": "Lokalcenter trykfølsom",
+  "icon": "lokalcenter-touch.png",
+  "paths": {
+    "live": "lokalcenter-touch-live.html",
+    "edit": "lokalcenter-touch-edit.html",
+    "css": "lokalcenter-touch.css"
+  },
+  "tools": {
+    "lokalcenter-touch-regions": "../tools/lokalcenter-touch-regions.html"
+  },
+  "orientation": "landscape"
+}

@@ -1,0 +1,58 @@
+@import "compass/css3";
+@import "../../Os2Display/DefaultTemplateBundle/Resources/sass/_shared-base";
+
+
+.lokalcenter-touch {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  &--top, &--bottom,  &--middle {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &--top {
+    height: 9%;
+  }
+
+  &--middle {
+    display: flex;
+    height: 77%;
+  }
+
+  &--bottom {
+    height: 14%;
+  }
+
+  &--middle-left {
+    position: relative;
+    height: 100%;
+    width: 23.49%;
+  }
+
+  &--middle-right {
+    position: relative;
+    height: 100%;
+    width: 76.51%;
+  }
+
+  &--middle-left-region-top, &--middle-left-region-middle {
+    position: relative;
+    height: 30.667%;
+    width: 100%;
+  }
+
+  &--middle-left-region-bottom {
+    position: relative;
+    height: 38.667%;
+    width: 100%;
+  }
+}

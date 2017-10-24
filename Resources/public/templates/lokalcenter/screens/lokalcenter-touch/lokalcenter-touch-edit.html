@@ -1,0 +1,58 @@
+<div class="presentation--border" style="max-width: 750px;">
+  <div class="presentation--header">
+    <div class="presentation--header-inner">
+      <div class="presentation--region-content-inner" data-ng-click="triggerTool({name: 'channel-picker-tool', region: 1})">
+        <span>1
+          <region-preview-widget region="1" screen="screen" class="presentation--region-content-inner"></region-preview-widget>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="presentation breakpoint-50">
+    <div class="presentation--inner" style="width: 700px; height:340px;">
+      <div class="presentation--region-vertical" style="max-width: 25%; height: 100%; display: inline-block; vertical-align: top;">
+        <div class="presentation--region-horizontal" style="width: 100%; height: 30.667%;" data-ng-click="triggerTool({name: 'channel-picker-tool', region: 2})">
+          <div class="presentation--region-content" data-ng-class="{'is-active': region === 2}">
+            <span>2
+              <region-preview-widget region="2" screen="screen" class="presentation--region-content-inner"></region-preview-widget>
+            </span>
+          </div>
+        </div>
+        <div class="presentation--region-horizontal" style="width: 100%; height: 30.667%;" data-ng-click="triggerTool({name: 'channel-picker-tool', region: 3})">
+          <div class="presentation--region-content" data-ng-class="{'is-active': region === 3}">
+            <span>3
+              <region-preview-widget region="3" screen="screen" class="presentation--region-content-inner"></region-preview-widget>
+            </span>
+          </div>
+        </div>
+        <div class="presentation--region-horizontal" style="width: 100%; height: 38.667%;" data-ng-click="triggerTool({name: 'channel-picker-tool', region: 4})">
+          <div class="presentation--region-content" data-ng-class="{'is-active': region === 4}">
+            <span>4
+              <region-preview-widget region="4" screen="screen" class="presentation--region-content-inner"></region-preview-widget>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="presentation--region-vertical" style="width: 75%; height:100%; display: inline-block; vertical-align: top;">
+        <div class="presentation--region-horizontal" style="width: 100%; height:100%;" data-ng-click="triggerTool({name: 'channel-picker-tool', region: 5})">
+          <div class="presentation--region-content" data-ng-class="{'is-active': region === 5}">
+            <span>5
+              <region-preview-widget region="5" screen="screen" class="presentation--region-content-inner"></region-preview-widget>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="presentation--header" data-ng-click="triggerTool({name: 'channel-picker-tool', region: 6})">
+    <div class="presentation--header-inner" data-ng-class="{'is-active': region === 6}">
+      <span>6
+        <region-preview-widget region="6" screen="screen" class="presentation--region-content-inner"></region-preview-widget>
+      </span>
+    </div>
+  </div>
+
+  <div>
+    <button data-ng-click="triggerTool({name: 'lokalcenter-touch-regions', region: 20})">Tilføj regioner</button>
+  </div>
+</div>

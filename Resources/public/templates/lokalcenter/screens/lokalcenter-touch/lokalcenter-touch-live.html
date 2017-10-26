@@ -24,4 +24,10 @@
   <div class="lokalcenter-touch--bottom">
     <region region-id="6" show-progress="true"></region>
   </div>
+
+  <div class="lokalcenter-touch--hidden-region js-touch-region" ng-repeat="region in options.extra_regions" data-id="{{ region.region }}" data-text="{{ region.text }}">
+    <div class="lokalcenter-touch--hidden-region-content">
+      <region region-id="region.region" show-progress="true"></region>
+    </div>
+  </div>
 </div>

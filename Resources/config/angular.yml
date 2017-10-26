@@ -1,5 +1,8 @@
 assets:
 
+# Injecting tool into toolsModule, to make it
 modules:
-
+  toolModule:
+    files:
+      - bundles/itklokalcentertemplate/apps/toolsModule/lokalcenter-touch-controller.js
 apps:

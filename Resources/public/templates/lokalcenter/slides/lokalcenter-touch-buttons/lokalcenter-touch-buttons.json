@@ -1,0 +1,24 @@
+{
+  "id": "lokalcenter-touch-buttons",
+  "type": "slide",
+  "name": "Lokalcenter: Trykfølsomme knapper",
+  "icon": "lokalcenter-touch-buttons.png",
+  "paths": {
+    "live": "lokalcenter-touch-buttons.html",
+    "edit": "lokalcenter-touch-buttons-edit.html",
+    "preview": "lokalcenter-touch-buttons.html",
+    "css": "lokalcenter-touch-buttons.css",
+    "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-touch-buttons/touchButtons.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "lokalcenter-touch-buttons",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+  },
+  "tools": []
+}

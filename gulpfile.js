@@ -31,6 +31,9 @@ var templates = {
   'lokalcenter': {
     'screens': [
       'lokalcenter-touch'
+    ],
+    'slides': [
+      'lokalcenter-touch-buttons'
     ]
   }
 };

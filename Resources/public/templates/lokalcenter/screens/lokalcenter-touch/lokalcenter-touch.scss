@@ -55,4 +55,33 @@
     height: 38.667%;
     width: 100%;
   }
+
+  &--hidden-region {
+    background-color: grey;
+    height: 86%;
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    z-index: 5;
+    left: 0;
+
+    &.show {
+      transition-property: top;
+      transition-duration: 1s;
+      top: 0;
+    }
+
+    &.hide {
+      transition-property: top;
+      transition-duration: 1s;
+      top: 1080px;
+    }
+  }
+
+  &--hidden-region-content {
+    width: 96%;
+    margin: 2%;
+    position: relative;
+    height: 92%;
+  }
 }

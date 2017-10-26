@@ -30,35 +30,6 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
           opened: false
         });
       }
-
-      /**
-       * Click the touch button.
-       *
-       * @param button
-       */
-      slide.clickTouchButton = function(button) {
-        console.log(slide.touchButtons);
-
-        for (var touchButton in slide.touchButtons) {
-          touchButton = slide.touchButtons[touchButton];
-
-          if (touchButton.region === button.region) {
-            touchButton.opened = !touchButton.opened;
-          }
-          else {
-            touchButton.opened = false;
-          }
-
-          if (touchButton.opened) {
-            touchButton.element.classList.remove('hide');
-            touchButton.element.classList.add('show');
-          }
-          else {
-            touchButton.element.classList.add('hide');
-            touchButton.element.classList.remove('show');
-          }
-        }
-      };
     },
 
     /**
@@ -72,6 +43,53 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
     run: function runBaseSlide(slide, region) {
       region.itkLog.info("Running lokalcenter touch buttons slide: " + slide.title);
       region.itkLog.info("Region slide cycle stopped!");
+
+      var closeTimeoutId = null;
+
+      function autoClose() {
+        if (closeTimeoutId !== null) {
+          clearTimeout(closeTimeoutId);
+        }
+
+        closeTimeoutId = setTimeout(function () {
+          for (var touchButton in slide.touchButtons) {
+            touchButton = slide.touchButtons[touchButton];
+            touchButton.element.classList.add('hide');
+            touchButton.element.classList.remove('show');
+          }
+
+          closeTimeoutId = null;
+        }, 5000);
+      }
+
+      /**
+       * Click the touch button.
+       *
+       * @param button
+       */
+      slide.clickTouchButton = function(button) {
+        for (var touchButton in slide.touchButtons) {
+          touchButton = slide.touchButtons[touchButton];
+
+          if (touchButton.region === button.region) {
+            touchButton.opened = !touchButton.opened;
+          }
+          else {
+            touchButton.opened = false;
+          }
+
+          if (touchButton.opened) {
+            touchButton.element.classList.remove('hide');
+            touchButton.element.classList.add('show');
+
+            autoClose();
+          }
+          else {
+            touchButton.element.classList.add('hide');
+            touchButton.element.classList.remove('show');
+          }
+        }
+      };
     }
   };
 }

@@ -1,5 +1,44 @@
+$color-grey: #f4f4f4;
+
 .lokalcenter-touch-buttons {
+  font-size: 16px;
   z-index: 10;
   bottom: 0;
   position: relative;
+
+  display: flex;
+
+  &--button {
+    background: white;
+    color:black;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid $color-grey;
+  }
+
+  &--button:last-child {
+    border: 0;
+  }
+
+  &--button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &--button-icon {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--button-text {
+    font-size: 1.2em;
+    padding: 5%;
+    flex-grow: 1;
+  }
 }

@@ -44,21 +44,23 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
       region.itkLog.info("Running lokalcenter touch buttons slide: " + slide.title);
       region.itkLog.info("Region slide cycle stopped!");
 
-      var closeTimeoutId = null;
+      var timeout = null;
 
       function autoClose() {
-        if (closeTimeoutId !== null) {
-          clearTimeout(closeTimeoutId);
+        if (timeout !== null) {
+          timeout.cancel();
         }
 
-        closeTimeoutId = setTimeout(function () {
+        timeout = region.$timeout(function () {
           for (var touchButton in slide.touchButtons) {
             touchButton = slide.touchButtons[touchButton];
             touchButton.element.classList.add('hide');
             touchButton.element.classList.remove('show');
+
+            touchButton.opened = false;
           }
 
-          closeTimeoutId = null;
+          timeout = null;
         }, 5000);
       }
 

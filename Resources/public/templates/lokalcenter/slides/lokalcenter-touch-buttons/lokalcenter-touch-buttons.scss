@@ -12,6 +12,13 @@ $color-text: #000;
   display: flex;
   align-items: flex-end;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    user-select: none;
+  }
+
   &--button {
     background: $color-base;
     border: 1px solid $color-highlight;
@@ -25,7 +32,7 @@ $color-text: #000;
       background: $color-highlight;
       transition-duration: .7s;
       transition-property: background, height;
-      height: 90%;
+      height: 85%;
     }
 
     &.is-hidden {

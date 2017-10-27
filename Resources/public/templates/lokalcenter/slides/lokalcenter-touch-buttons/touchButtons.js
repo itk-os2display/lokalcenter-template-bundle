@@ -48,7 +48,7 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
 
       function autoClose() {
         if (timeout !== null) {
-          timeout.cancel();
+          region.$timeout.cancel(timeout);
         }
 
         timeout = region.$timeout(function () {
@@ -59,8 +59,6 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
 
             touchButton.opened = false;
           }
-
-          timeout = null;
         }, 5000);
       }
 
@@ -70,27 +68,33 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
        * @param button
        */
       slide.clickTouchButton = function(button) {
-        for (var touchButton in slide.touchButtons) {
-          touchButton = slide.touchButtons[touchButton];
+        region.$timeout(function () {
+          for (var touchButton in slide.touchButtons) {
+            touchButton = slide.touchButtons[touchButton];
 
-          if (touchButton.region === button.region) {
-            touchButton.opened = !touchButton.opened;
+            if (touchButton.region === button.region) {
+              touchButton.opened = !touchButton.opened;
+            }
+            else {
+              touchButton.opened = false;
+            }
+
+            if (touchButton.opened) {
+              touchButton.element.classList.remove('hide');
+              touchButton.element.classList.add('show');
+            }
+            else {
+              touchButton.element.classList.add('hide');
+              touchButton.element.classList.remove('show');
+            }
           }
-          else {
-            touchButton.opened = false;
-          }
 
-          if (touchButton.opened) {
-            touchButton.element.classList.remove('hide');
-            touchButton.element.classList.add('show');
-
+          if (slide.touchButtons.reduce(function (sum, value) {
+            return value.opened || sum;
+            }, false)) {
             autoClose();
           }
-          else {
-            touchButton.element.classList.add('hide');
-            touchButton.element.classList.remove('show');
-          }
-        }
+        });
       };
     }
   };

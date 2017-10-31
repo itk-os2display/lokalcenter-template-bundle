@@ -33,7 +33,8 @@ var templates = {
       'lokalcenter-touch'
     ],
     'slides': [
-      'lokalcenter-touch-buttons'
+      'lokalcenter-touch-buttons',
+      'lokalcenter-only-text'
     ]
   }
 };

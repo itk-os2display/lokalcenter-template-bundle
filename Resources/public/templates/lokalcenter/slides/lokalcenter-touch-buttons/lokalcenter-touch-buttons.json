@@ -6,7 +6,7 @@
   "paths": {
     "live": "lokalcenter-touch-buttons.html",
     "edit": "lokalcenter-touch-buttons-edit.html",
-    "preview": "lokalcenter-touch-buttons.html",
+    "preview": "lokalcenter-touch-buttons-preview.html",
     "css": "lokalcenter-touch-buttons.css",
     "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-touch-buttons/touchButtons.js"
   },

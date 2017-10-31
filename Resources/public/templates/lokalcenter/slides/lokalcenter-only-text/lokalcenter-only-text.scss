@@ -1,0 +1,21 @@
+$color-highlight: #eaeaea;
+$color-base: #fff;
+$color-text: #000;
+
+.lokalcenter-only-text {
+  font-size: 16px;
+  z-index: 10;
+  bottom: 0;
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    user-select: none;
+  }
+}

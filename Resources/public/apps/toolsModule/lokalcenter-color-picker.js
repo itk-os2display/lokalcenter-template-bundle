@@ -7,11 +7,23 @@ angular.module('toolsModule').directive('lokalcenterColorPicker', function(){
       close: '&'
     },
     link: function (scope) {
-      scope.field = scope.slide.options.color;
-
       scope.selectColor = function(color) {
-        scope.field = color.value;
+        scope.slide.options.color = color.value;
       };
+      scope.selectTextColor = function(color) {
+        scope.slide.options.textcolor = color.value;
+      };
+
+      scope.textColorPalette = [
+        {
+          text: "Black",
+          value: "#000"
+        },
+        {
+          text: "WHite",
+          value: "#fff"
+        },
+      ];
 
       scope.palette = [
         {
@@ -25,7 +37,8 @@ angular.module('toolsModule').directive('lokalcenterColorPicker', function(){
         {
           text: "Purple",
           value: "#673BB7"
-        },        {
+        },
+        {
           text: "30% Purple",
           value: "#D2C3EA"
         },

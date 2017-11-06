@@ -6,19 +6,23 @@
   "paths": {
     "live": "lokalcenter-only-text.html",
     "edit": "lokalcenter-only-text-edit.html",
-    "preview": "lokalcenter-only-text.html",
+    "preview": "lokalcenter-only-text-edit.html",
     "css": "lokalcenter-only-text.css",
     "js": "bundles/os2displaydefaulttemplate/templates/js/baseSlide.js"
   },
   "orientation": "landscape",
   "slide_type": "base",
   "media_type": "image",
-  "script_id": "lokalcenter-only-text",
+  "script_id": "base",
   "ideal_dimensions": {
     "width": "1920",
     "height": "1080"
   },
   "empty_options": {
+    "fontsize": 16,
+    "color": "#000",
+    "text": "",
+    "textcolor": "#fff"
   },
   "tools": [
     {
@@ -27,7 +31,7 @@
     },
     {
       "name": "Tekst",
-      "template": "bundles/itklokalcentertemplate/apps/toolsModule/lokalcenter-text.html"
+      "id": "lokalcenter-text"
     }
   ]
 }

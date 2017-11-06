@@ -17,12 +17,16 @@ angular.module('toolsModule').directive('lokalcenterColorPicker', function(){
       scope.textColorPalette = [
         {
           text: "Black",
-          value: "#000"
+          value: "#333"
         },
         {
-          text: "WHite",
-          value: "#fff"
+          text: "60% Black",
+          value: "#858585"
         },
+        {
+          text: "White",
+          value: "#fff"
+        }
       ];
 
       scope.palette = [
@@ -97,6 +101,14 @@ angular.module('toolsModule').directive('lokalcenterColorPicker', function(){
         {
           text: "30% Red",
           value: "#F2C0BF"
+        },
+        {
+          text: "Light gray",
+          value: "#f6f6f6"
+        },
+        {
+          text: "White",
+          value: "#fff"
         }
       ];
     },

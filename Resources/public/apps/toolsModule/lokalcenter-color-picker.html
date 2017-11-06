@@ -11,9 +11,8 @@
     <div class="edit-menu--background-page">
       <div class="edit-menu--background-page-inner">
         <h2 class="edit-menu--background-header">Vælg temafarve</h2>
-        <div class="edit-menu--background-content" style="max-width: 780px; margin: 0 auto;">
-          <h3>Farvepalette</h3>
-          <div style="display: flex; flex-wrap: wrap; justify-content: space-around">
+        <div class="edit-menu--background-content" style="max-width: 730px; margin: 0 auto;">
+          <div style="display: flex; flex-wrap: wrap; justify-content: flex-start">
             <div ng-repeat="color in palette" style="margin: 10px;"
                  ng-click="selectColor(color)">
               <div
@@ -28,10 +27,10 @@
           </div>
         </div>
 
-        <h2 class="edit-menu--background-header">Vælg tekstfarve</h2>
-        <div class="edit-menu--background-content" style="max-width: 780px; margin: 0 auto;">
+        <h2 class="edit-menu--background-header" style="margin-top: 1em;">Vælg tekstfarve</h2>
+        <div class="edit-menu--background-content" style="max-width: 730px; margin: 0 auto;">
           <h3>Farvepalette</h3>
-          <div style="display: flex; flex-wrap: wrap; justify-content: space-around">
+          <div style="display: flex; flex-wrap: wrap; justify-content: flex-start">
             <div ng-repeat="color in textColorPalette" style="margin: 10px;"
                  ng-click="selectTextColor(color)">
               <div

@@ -1,0 +1,89 @@
+$color-base: #fff;
+$color-middle: #dad9d9;
+
+.lokalcenter-touch {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  &--top, &--bottom,  &--middle {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &--top {
+    height: 9%;
+  }
+
+  &--middle {
+    display: flex;
+    height: 77%;
+  }
+
+  &--bottom {
+    height: 17.5%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &--middle-left {
+    position: relative;
+    height: 100%;
+    width: 23.49%;
+  }
+
+  &--middle-right {
+    position: relative;
+    height: 100%;
+    width: 76.51%;
+  }
+
+  &--middle-left-region-top, &--middle-left-region-middle {
+    position: relative;
+    height: 30.667%;
+    width: 100%;
+  }
+
+  &--middle-left-region-bottom {
+    position: relative;
+    height: 38.667%;
+    width: 100%;
+  }
+
+  &--hidden-region {
+    background-color: $color-base;
+    background: linear-gradient(to right, $color-base, $color-middle 7%, $color-middle 93%, $color-base 100%);
+    height: 86%;
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    z-index: 5;
+    left: 0;
+
+    &.show {
+      transition-property: top;
+      transition-duration: 1s;
+      top: 0;
+    }
+
+    &.hide {
+      transition-property: top;
+      transition-duration: 1s;
+      top: 1080px;
+    }
+  }
+
+  &--hidden-region-content {
+    margin-left: 7%;
+    width: 86%;
+    position: relative;
+    height: 100%;
+  }
+}

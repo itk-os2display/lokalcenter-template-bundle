@@ -1,0 +1,37 @@
+{
+  "id": "lokalcenter-only-text",
+  "type": "slide",
+  "name": "Lokalcenter: Tekst",
+  "icon": "lokalcenter-only-text.png",
+  "paths": {
+    "live": "lokalcenter-only-text.html",
+    "edit": "lokalcenter-only-text-edit.html",
+    "preview": "lokalcenter-only-text-edit.html",
+    "css": "lokalcenter-only-text.css",
+    "js": "bundles/os2displaydefaulttemplate/templates/js/baseSlide.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "base",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+    "fontsize": 16,
+    "color": "#000",
+    "text": "",
+    "textcolor": "#fff"
+  },
+  "tools": [
+    {
+      "name": "Farver",
+      "id": "lokalcenter-color-picker"
+    },
+    {
+      "name": "Tekst",
+      "id": "lokalcenter-text"
+    }
+  ]
+}

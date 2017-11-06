@@ -1,0 +1,33 @@
+<div class="lokalcenter-touch">
+  <div class="lokalcenter-touch--top">
+    <region region-id="1" show-progress="true"></region>
+  </div>
+
+  <div class="lokalcenter-touch--middle">
+    <div class="lokalcenter-touch--middle-left">
+      <div class="lokalcenter-touch--middle-left-region-top">
+        <region region-id="2" show-progress="true" scale=".25"></region>
+      </div>
+      <div class="lokalcenter-touch--middle-left-region-middle">
+        <region region-id="3" show-progress="true" scale=".25"></region>
+      </div>
+      <div class="lokalcenter-touch--middle-left-region-bottom">
+        <region region-id="4" show-progress="true" scale=".25"></region>
+      </div>
+    </div>
+
+    <div class="lokalcenter-touch--middle-right">
+      <region region-id="5" show-progress="true" scale=".75"></region>
+    </div>
+  </div>
+
+  <div class="lokalcenter-touch--bottom">
+    <region region-id="6" show-progress="true"></region>
+  </div>
+
+  <div class="lokalcenter-touch--hidden-region js-touch-region" ng-repeat="region in options.extra_regions" data-id="{{ region.region }}" data-text="{{ region.text }}">
+    <div class="lokalcenter-touch--hidden-region-content">
+      <region region-id="region.region" show-progress="true"></region>
+    </div>
+  </div>
+</div>

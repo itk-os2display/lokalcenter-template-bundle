@@ -1,0 +1,32 @@
+<div class="control-panel--tool" ng-controller="ItkLokalcenterTouch"
+     data-ng-class="{'is-visible': display,'is-hidden': !display}">
+
+  <div class="control-panel--tool-tab">
+    <form class="cpw--wrapper">
+      <h3>Tilføj op til 5 skjulte regioner.</h3>
+
+      <a style="max-width: 50%;" class="cpw--add-channels-item-action"
+          data-ng-click="addHiddenRegion()"
+      >Tilføj skjult region</a>
+
+      <div ng-repeat="region in data.options.extra_regions">
+        <hr/>
+        <div>
+          {{$index + 1}}.
+          <label class="cpw--text-label">Tekst på knappen</label>
+          <text-widget field="region.text"
+                       placeholder-text="F.eks. Find vej"></text-widget>
+          <br/>
+        </div>
+        <a style="max-width: 50%;" data-ng-click="removeHiddenRegion(region)" class="cpw--selected-channels-item-action">Fjern region</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="control-panel--actions">
+    <div class="control-panel--actions-inner">
+      <a class="control-panel--actions-close" data-ng-click="saveAction()">Gem
+        og luk</a>
+    </div>
+  </div>
+</div>

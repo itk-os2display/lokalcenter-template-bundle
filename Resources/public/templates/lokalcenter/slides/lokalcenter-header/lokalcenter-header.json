@@ -1,0 +1,33 @@
+{
+  "id": "lokalcenter-header",
+  "type": "slide",
+  "name": "Lokalcenter: Header",
+  "icon": "lokalcenter-header.png",
+  "paths": {
+    "live": "lokalcenter-header.html",
+    "edit": "lokalcenter-header-edit.html",
+    "preview": "lokalcenter-header-edit.html",
+    "css": "lokalcenter-header.css",
+    "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-header/lokalcenter-header.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "lokalcenter-header",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "97"
+  },
+  "empty_options": {
+    "fontsize": 16,
+    "color": "#000",
+    "text": "",
+    "textcolor": "#fff"
+  },
+  "tools": [
+    {
+      "name": "Logo",
+      "id": "logo-editor"
+    }
+  ]
+}

@@ -1,4 +1,7 @@
-# Injecting tool into toolsModule, to make it
+assets:
+  js_prod:
+    - bundles/itklokalcentertemplate/assets/build/itklokalcentertemplate.min.js
+
 modules:
   toolModule:
     files:

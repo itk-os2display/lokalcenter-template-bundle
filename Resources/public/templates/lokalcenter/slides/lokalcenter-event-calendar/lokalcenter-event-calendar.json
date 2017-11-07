@@ -8,12 +8,12 @@
     "edit": "lokalcenter-event-calendar-edit.html",
     "preview": "lokalcenter-event-calendar-edit.html",
     "css": "lokalcenter-event-calendar.css",
-    "js": "bundles/itkaarhustemplate/templates/js/calendarSingleDay.js"
+    "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-event-calendar/lokalcenter-event-calendar.js"
   },
   "orientation": "landscape",
   "slide_type": "calendar",
   "media_type": "image",
-  "script_id": "calendar-single-day",
+  "script_id": "lokalcenter-event-calendar",
   "ideal_dimensions": {
     "width": "1920",
     "height": "1080"

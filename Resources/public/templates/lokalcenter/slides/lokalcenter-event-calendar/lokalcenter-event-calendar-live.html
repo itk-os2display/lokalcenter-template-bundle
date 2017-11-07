@@ -1,0 +1,15 @@
+<div class="lokalcenter-event-calendar"
+     data-ng-style="{'font-size': theStyle.fontsize, 'background-color': ikSlide.options.color, 'color': ikSlide.options.textcolor}">
+  <h1 class="lokalcenter-event-calendar--headline">{{ikSlide.options.headline}}</h1>
+  <div class="lokalcenter-event-calendar--event"
+       data-ng-repeat="event in ikSlide.external_data | limitTo : (ikSlide.options.number_of_items ? ikSlide.options.number_of_items : 7) | orderBy: 'start_time'">
+    <div>{{event.event_name ? event.event_name : 'Optaget'}}</div>
+    <div>{{event.resource_alias ? event.resource_alias : (event.location ? event.location : event.resource_id )}}
+    </div>
+    <div>
+      {{event.start_time * 1000 | date:'HH:mm'}}
+      -
+      {{event.end_time * 1000 | date:'HH:mm'}}
+    </div>
+  </div>
+</div>

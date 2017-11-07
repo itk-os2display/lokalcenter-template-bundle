@@ -34,7 +34,9 @@ var templates = {
     ],
     'slides': [
       'lokalcenter-touch-buttons',
-      'lokalcenter-only-text'
+      'lokalcenter-only-text',
+      'lokalcenter-event-calendar',
+      'lokalcenter-header'
     ]
   }
 };

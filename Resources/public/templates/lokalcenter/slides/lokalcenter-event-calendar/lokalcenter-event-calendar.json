@@ -1,0 +1,39 @@
+{
+  "id": "lokalcenter-event-calendar",
+  "type": "slide",
+  "name": "Lokalcenter: Begivenhedskalender",
+  "icon": "lokalcenter-event-calendar.png",
+  "paths": {
+    "live": "lokalcenter-event-calendar-live.html",
+    "edit": "lokalcenter-event-calendar-edit.html",
+    "preview": "lokalcenter-event-calendar-edit.html",
+    "css": "lokalcenter-event-calendar.css",
+    "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-event-calendar/lokalcenter-event-calendar.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "calendar",
+  "media_type": "image",
+  "script_id": "lokalcenter-event-calendar",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+    "fontsize": "16",
+    "color": "#000",
+    "textcolor": "#fff",
+    "headline": "",
+    "text": "",
+    "resources": []
+  },
+  "tools": [
+    {
+      "name": "Farver",
+      "id": "lokalcenter-color-picker"
+    },
+    {
+      "name": "Kalender",
+      "id": "event-calendar-editor"
+    }
+  ]
+}

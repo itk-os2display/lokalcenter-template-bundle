@@ -1,0 +1,58 @@
+$FontPathOpenSans: "../../fonts/open-sans";
+@import "../../../../../../node_modules/npm-font-open-sans/open-sans.scss";
+$font-open-sans: 'Open Sans', sans-serif;
+
+$color-highlight: #eaeaea;
+$color-base: #fff;
+$color-text: #333;
+
+.lokalcenter-header {
+  background-color: $color-base;
+  color: $color-text;
+  font-family: $font-open-sans;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  &--logo {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    height: 100%;
+  }
+
+  &--container {
+    margin-left: 1em;
+    margin-right: 1em;
+    flex: 1;
+  }
+
+  &--clock {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &--date {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+
+    div {
+      display: inline-block;
+    }
+  }
+}

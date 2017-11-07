@@ -1,0 +1,11 @@
+<div class="lokalcenter-header" data-ng-style="{'font-size': theStyle.fontsize}">
+  <div class="lokalcenter-header--container">
+    <img data-ng-src="{{ ikSlide.logo }}" class="lokalcenter-header--logo" ng-if="ikSlide.logo">
+  </div>
+  <div class="lokalcenter-header--container lokalcenter-header--clock">
+    {{ ikSlide.currentTime | date: 'hh:mm' }}
+  </div>
+  <div class="lokalcenter-header--container lokalcenter-header--date">
+    {{ ikSlide.currentTime | date: 'd. MMMM yyyy' }}
+  </div>
+</div>

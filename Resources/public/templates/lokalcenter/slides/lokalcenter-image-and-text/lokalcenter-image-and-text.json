@@ -1,0 +1,41 @@
+{
+  "id": "lokalcenter-image-and-text",
+  "type": "slide",
+  "name": "Lokalcenter: Billede og tekst",
+  "icon": "lokalcenter-image-and-text.png",
+  "paths": {
+    "live": "lokalcenter-image-and-text.html",
+    "edit": "lokalcenter-image-and-text-edit.html",
+    "preview": "lokalcenter-image-and-text-edit.html",
+    "css": "lokalcenter-image-and-text.css",
+    "js": "bundles/os2displaydefaulttemplate/templates/js/baseSlide.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "base",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+    "fontsize": 16,
+    "color": "#000",
+    "text": "",
+    "textcolor": "#fff"
+  },
+  "tools": [
+    {
+      "name": "Farver",
+      "id": "lokalcenter-color-picker"
+    },
+    {
+      "name": "Tekst",
+      "id": "lokalcenter-text"
+    },
+    {
+      "name": "Billede",
+      "id": "background-editor"
+    }
+  ]
+}

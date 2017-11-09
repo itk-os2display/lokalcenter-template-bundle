@@ -1,15 +1,14 @@
-$FontPathOpenSans: "../../fonts/open-sans";
-@import "../../../../../../node_modules/npm-font-open-sans/open-sans.scss";
-$font-open-sans: 'Open Sans', sans-serif;
+$font-black: 'Arial Black', sans-serif;
+$font-regular: Arial, sans-serif;
 
 $color-highlight: #eaeaea;
-$color-base: #000;
+$color-base: #333;
 $color-text: #fff;
 
 .lokalcenter-event-calendar {
   background-color: $color-base;
   color: $color-text;
-  font-family: $font-open-sans;
+  font-family: $font-regular;
   font-size: 16px;
   font-weight: normal;
   position: relative;
@@ -27,6 +26,7 @@ $color-text: #fff;
   }
 
   &--headline {
+    font-family: $font-black;
     margin-top: 0;
     font-size: 6em;
     font-weight: bold;

@@ -5,7 +5,7 @@ $color-highlight: #eaeaea;
 $color-base: #333;
 $color-text: #fff;
 
-.lokalcenter-only-text {
+.lokalcenter-image-and-text {
   background-color: $color-base;
   color: $color-text;
   font-family: $font-regular;
@@ -13,12 +13,11 @@ $color-text: #fff;
   font-weight: normal;
   position: relative;
   height: 100%;
-  padding: 5%;
   overflow: hidden;
   text-align: left;
 
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-start;
 
   p {
     margin: 0;
@@ -26,11 +25,22 @@ $color-text: #fff;
   }
 
   h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
     margin-top: 0;
   }
 
   h1 {
+    line-height: 1.2em;
+    text-transform: uppercase;
     font-family: $font-black;
+  }
+
+  h1:after {
+    content: "";
+    width: 2em;
+    display: block;
+    margin-top: .5em;
+    border-bottom: 0.12em solid;
   }
 
   ul {
@@ -59,7 +69,17 @@ $color-text: #fff;
     user-select: none;
   }
 
+  .image {
+    width: 100%;
+    height: 100%;
+    flex-basis: 65%;
+    background-size: cover;
+    background-position: center;
+  }
+
   .text {
-    font-size: 4em;
+    font-size: 1.7em;
+    padding: 2.2em;
+    flex-basis: 35%;
   }
 }

@@ -1,0 +1,87 @@
+$font-black: 'Arial Black', sans-serif;
+$font-regular: Arial, sans-serif;
+
+$color-highlight: #eaeaea;
+$color-base: #fff;
+$color-text: #333;
+
+.lokalcenter-quotes {
+  font-family: Arial,sans-serif;
+  color: $color-text;
+  font-size: 16px;
+  z-index: 3;
+  bottom: 0;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  &--container {
+    background-color: #fff;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &--content {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+    bottom: -200%;
+
+    &.hide {
+      transition: 1.5s;
+      bottom: -200%;
+    }
+
+    &.show {
+      transition-delay: 1.5s;
+      transition: 1.5s;
+      bottom: 25%;
+    }
+  }
+
+  &--item {
+    display: flex;
+    width: 60%;
+  }
+
+  &--icon {
+    margin-top: .55em;
+  }
+
+  &--text {
+    margin-left: 1em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &--quote {
+    text-transform: uppercase;
+    font-family: $font-black;
+    font-size: 1.75em;
+    font-weight: bold;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  &--author {
+    font-family: $font-regular;
+    font-size: 1em;
+    font-style: italic;
+  }
+}

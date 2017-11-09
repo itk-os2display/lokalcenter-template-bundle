@@ -1,6 +1,5 @@
-$FontPathOpenSans: "../../fonts/open-sans";
-@import "../../../../../../node_modules/npm-font-open-sans/open-sans.scss";
-$font-open-sans: 'Open Sans', sans-serif;
+$font-black: 'Arial Black', sans-serif;
+$font-regular: Arial, sans-serif;
 
 $color-highlight: #eaeaea;
 $color-base: #fff;
@@ -9,7 +8,7 @@ $color-text: #333;
 .lokalcenter-header {
   background-color: $color-base;
   color: $color-text;
-  font-family: $font-open-sans;
+  font-family: $font-regular;
   font-size: 16px;
   font-weight: normal;
   position: relative;
@@ -18,8 +17,8 @@ $color-text: #333;
   text-align: left;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   *,
   *::before,
@@ -41,12 +40,14 @@ $color-text: #333;
   }
 
   &--clock {
-    font-size: 3em;
+    font-family: $font-black;
+    font-size: 2.8em;
     font-weight: bold;
     text-align: center;
   }
 
   &--date {
+    font-family: $font-black;
     font-size: 2em;
     font-weight: bold;
     text-align: right;

@@ -1,0 +1,31 @@
+{
+  "id": "lokalcenter-quotes",
+  "type": "slide",
+  "name": "Lokalcenter: Citater",
+  "icon": "lokalcenter-quotes.png",
+  "paths": {
+    "live": "lokalcenter-quotes.html",
+    "edit": "lokalcenter-quotes.html",
+    "preview": "lokalcenter-quotes.html",
+    "css": "lokalcenter-quotes.css",
+    "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-quotes/quotes.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "lokalcenter-quotes",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+    "font_size": 16,
+    "quotes": []
+  },
+  "tools": [
+    {
+      "name": "Citater",
+      "id": "lokalcenter-quotes"
+    }
+  ]
+}

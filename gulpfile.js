@@ -36,7 +36,9 @@ var templates = {
       'lokalcenter-touch-buttons',
       'lokalcenter-only-text',
       'lokalcenter-event-calendar',
-      'lokalcenter-header'
+      'lokalcenter-header',
+      'lokalcenter-image-and-text',
+      'lokalcenter-quotes'
     ]
   }
 };

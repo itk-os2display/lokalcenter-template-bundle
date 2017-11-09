@@ -24,8 +24,6 @@ $color-text: #333;
   }
 
   &--container {
-    padding-left: 20%;
-    padding-right: 20%;
     background-color: #fff;
     height: 80%;
     width: 100%;
@@ -34,7 +32,27 @@ $color-text: #333;
   }
 
   &--content {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+    bottom: -200%;
+
+    &.hide {
+      transition: 1.5s;
+      bottom: -200%;
+    }
+
+    &.show {
+      transition-delay: 1.5s;
+      transition: 1.5s;
+      bottom: 25%;
+    }
+  }
+
+  &--item {
     display: flex;
+    width: 60%;
   }
 
   &--icon {
@@ -58,6 +76,7 @@ $color-text: #333;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
   }
 
   &--author {

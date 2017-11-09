@@ -37,7 +37,8 @@ var templates = {
       'lokalcenter-only-text',
       'lokalcenter-event-calendar',
       'lokalcenter-header',
-      'lokalcenter-image-and-text'
+      'lokalcenter-image-and-text',
+      'lokalcenter-quotes'
     ]
   }
 };

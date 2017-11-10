@@ -6,7 +6,7 @@
   "paths": {
     "live": "lokalcenter-quotes.html",
     "edit": "lokalcenter-quotes-edit.html",
-    "preview": "lokalcenter-quotes-edit.html",
+    "preview": "lokalcenter-quotes-preview.html",
     "css": "lokalcenter-quotes.css",
     "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-quotes/quotes.js"
   },

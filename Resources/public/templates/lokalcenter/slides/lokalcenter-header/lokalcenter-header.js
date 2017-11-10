@@ -39,6 +39,24 @@ if (!window.slideFunctions['lokalcenter-header']) {
         // Update current datetime.
         slide.currentTime = Date.now();
       }, 1000);
+
+      var duration = 300;
+
+      // Wait fadeTime before start to account for fade in.
+      region.$timeout(function () {
+        // Set the progress bar animation.
+        region.progressBar.start(duration);
+
+        // Wait for slide duration, then show next slide.
+        // + fadeTime to account for fade out.
+        region.$timeout(function () {
+          if (interval) {
+            region.$interval.cancel(interval);
+          }
+
+          region.nextSlide();
+        }, duration * 1000 + region.fadeTime);
+      }, region.fadeTime);
     }
   };
 }

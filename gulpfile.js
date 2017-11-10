@@ -49,6 +49,16 @@ var templates = {
 gulp.task('sass', 'Compile the sass for each templates into minified css files.', function () {
   'use strict';
 
+  var adminBuildDir = 'Resources/public/assets/build';
+  var sassPath = 'sass/*.scss';
+
+  gulp.src(sassPath)
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }).on('error', sass.logError))
+    .pipe(rename({extname: ".min.css"}))
+    .pipe(gulp.dest(adminBuildDir));
+
   for (var organization in templates) {
     for (var templateType in templates[organization]) {
       for (var folder in templates[organization][templateType]) {

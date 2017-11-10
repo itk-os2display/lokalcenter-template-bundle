@@ -1,6 +1,6 @@
-<div class="lokalcenter-quotes" data-ng-style="{'font-size': theStyle.fontsize}">
-  <div class="lokalcenter-quotes--container">
-    <div class="lokalcenter-quotes--content" data-ng-repeat="quote in ikSlide.options.quotes" data-ng-class="{ 'show': ikSlide.quoteIndex === $index, 'hide': ikSlide.quoteIndex !== $index}">
+<div class="lokalcenter-quotes preview" data-ng-style="{'width': theStyle.width, 'height': theStyle.height, 'font-size': theStyle.fontsize}">
+  <div class="lokalcenter-quotes--container preview">
+    <div class="lokalcenter-quotes--content preview">
       <div class="lokalcenter-quotes--item">
         <div class="lokalcenter-quotes--icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="38" height="28" viewBox="0 0 38 28">
@@ -8,8 +8,8 @@
           </svg>
         </div>
         <div class="lokalcenter-quotes--text">
-          <div class="lokalcenter-quotes--quote">{{ quote.quote }}</div>
-          <div class="lokalcenter-quotes--author">{{ quote.author}}</div>
+          <div class="lokalcenter-quotes--quote">{{ ikSlide.options.quotes[0].quote }}</div>
+          <div class="lokalcenter-quotes--author">{{ ikSlide.options.quotes[0].author}}</div>
         </div>
       </div>
     </div>

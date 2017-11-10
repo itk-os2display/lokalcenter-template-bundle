@@ -11,21 +11,28 @@
     </div>
     <div class="edit-menu--content-page">
       <div class="edit-menu--content-page-inner">
-        <h2 class="edit-menu--content-header">Vælg citater</h2>
+        <div class="itk-lokalcenter-template--quotes-tool">
+          <h2 class="edit-menu--content-header">Vælg citater</h2>
 
-        <div style="display: flex">
 
-          <input type="text" ng-model="newQuote.quote">
-          <input type="text" ng-model="newQuote.author">
-          <div class="create-slide--button" ng-click="addQuote()">+</div>
-        </div>
+          <div class="itk-lokalcenter-template--quotes-tool-add">
+            <h3 class="edit-menu--content-header">Tilføj citat</h3>
 
-        <h3 class="edit-menu--content-header">Citater</h3>
+            <label for="quote">Citat</label>
+            <input id="quote" type="text" ng-model="newQuote.quote">
+            <label for="author">Forfatter</label>
+            <input id="author" type="text" ng-model="newQuote.author">
+            <div class="itk-lokalcenter-template--button-add" ng-click="addQuote()">+ Tilføj citat</div>
+          </div>
 
-        <div ng-repeat="quote in slide.options.quotes track by $index" style="display: flex;">
-          <input type="text" ng-model="slide.options.quotes[$index].quote">
-          <input type="text" ng-model="slide.options.quotes[$index].author">
-          <div class="create-slide--button" ng-click="removeQuote($index)">-</div>
+          <div class="itk-lokalcenter-template--quotes-tool-add">
+            <h3 class="edit-menu--content-header">Valgte citater</h3>
+
+            <div ng-repeat="quote in slide.options.quotes track by $index">
+              <div>"{{slide.options.quotes[$index].quote}}" - {{slide.options.quotes[$index].author}}</div>
+              <div class="itk-lokalcenter-template--button-remove" ng-click="removeQuote($index)">- Fjern citat</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

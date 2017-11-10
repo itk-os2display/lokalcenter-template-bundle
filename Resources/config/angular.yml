@@ -1,4 +1,6 @@
 assets:
+  css:
+    - bundles/itklokalcentertemplate/assets/build/itklokalcentertemplate.min.css
   js_prod:
     - bundles/itklokalcentertemplate/assets/build/itklokalcentertemplate.min.js
 modules:

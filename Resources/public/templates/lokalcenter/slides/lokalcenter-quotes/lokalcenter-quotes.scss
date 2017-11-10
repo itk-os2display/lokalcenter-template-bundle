@@ -6,6 +6,7 @@ $color-base: #fff;
 $color-text: #333;
 
 .lokalcenter-quotes {
+  text-align: left;
   font-family: Arial,sans-serif;
   color: $color-text;
   font-size: 16px;
@@ -29,6 +30,10 @@ $color-text: #333;
     width: 100%;
     display: flex;
     align-items: center;
+
+    &.preview {
+      height: 100%;
+    }
   }
 
   &--content {
@@ -37,6 +42,10 @@ $color-text: #333;
     margin-right: 20%;
     position: absolute;
     bottom: -200%;
+
+    &.preview {
+      bottom: 25%;
+    }
 
     &.hide {
       transition: 1.5s;

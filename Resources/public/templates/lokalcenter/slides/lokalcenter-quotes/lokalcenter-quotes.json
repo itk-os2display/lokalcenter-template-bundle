@@ -5,8 +5,8 @@
   "icon": "lokalcenter-quotes.png",
   "paths": {
     "live": "lokalcenter-quotes.html",
-    "edit": "lokalcenter-quotes.html",
-    "preview": "lokalcenter-quotes.html",
+    "edit": "lokalcenter-quotes-edit.html",
+    "preview": "lokalcenter-quotes-preview.html",
     "css": "lokalcenter-quotes.css",
     "js": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-quotes/quotes.js"
   },
@@ -16,10 +16,10 @@
   "script_id": "lokalcenter-quotes",
   "ideal_dimensions": {
     "width": "1920",
-    "height": "1080"
+    "height": "152"
   },
   "empty_options": {
-    "font_size": 16,
+    "fontsize": 16,
     "quotes": []
   },
   "tools": [

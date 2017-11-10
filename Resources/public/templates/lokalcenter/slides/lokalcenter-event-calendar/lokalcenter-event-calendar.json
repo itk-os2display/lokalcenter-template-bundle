@@ -23,7 +23,6 @@
     "color": "#000",
     "textcolor": "#fff",
     "headline": "",
-    "text": "",
     "resources": []
   },
   "tools": [
@@ -34,6 +33,10 @@
     {
       "name": "Kalender",
       "id": "event-calendar-editor"
+    },
+    {
+      "name": "Overskrift",
+      "template": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-event-calendar/tools/text.html"
     }
   ]
 }

@@ -19,7 +19,14 @@
     "height": "1080"
   },
   "empty_options": {
-    "font_size": 16
+    "font_size": 16,
+    "autoclose_enabled": true,
+    "autoclose_timeout": 60
   },
-  "tools": []
+  "tools": [
+    {
+      "name": "Autoluk",
+      "template": "bundles/itklokalcentertemplate/templates/lokalcenter/slides/lokalcenter-touch-buttons/tools/autoclose.html"
+    }
+  ]
 }

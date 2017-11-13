@@ -45,6 +45,10 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
       region.itkLog.info("Region slide cycle stopped!");
 
       var timeout = null;
+      // Defaults to 60 s.
+      var autoCloseTimeout = slide.options.autoclose_timeout ? slide.options.autoclose_timeout * 1000 : 60000;
+      // Defaults to enabled.
+      var autoCloseEnabled = slide.options.autoclose_enabled !== null ? slide.options.autoclose_enabled : true;
 
       function autoClose() {
         if (timeout !== null) {
@@ -59,7 +63,7 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
 
             touchButton.opened = false;
           }
-        }, 5000);
+        }, autoCloseTimeout);
       }
 
       /**
@@ -89,7 +93,7 @@ if (!window.slideFunctions['lokalcenter-touch-buttons']) {
             }
           }
 
-          if (slide.touchButtons.reduce(function (sum, value) {
+          if (autoCloseEnabled && slide.touchButtons.reduce(function (sum, value) {
             return value.opened || sum;
             }, false)) {
             autoClose();

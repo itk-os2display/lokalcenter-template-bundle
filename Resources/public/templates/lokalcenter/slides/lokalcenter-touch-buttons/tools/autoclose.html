@@ -1,0 +1,30 @@
+<div class="edit-menu--content-calendar is-visible" role="banner">
+  <div class="edit-menu--content-inner">
+    <div class="edit-menu--toggle-icon" data-ng-click="close()">
+      <div class="svg-clickable">
+        <object data="bundles/os2displayadmin/images/svg/cancel.svg"
+                type="image/svg+xml">
+          <!-- Fallback (ie8)-->
+          <img src="bundles/os2displayadmin/images/cancel.png"/>
+        </object>
+      </div>
+    </div>
+    <div class="edit-menu--content-page">
+      <div class="edit-menu--content-page-inner">
+        <div class="itk-lokalcenter-template--tool">
+          <h2 class="edit-menu--content-header">Konfigurer autoluk</h2>
+
+          <div class="itk-lokalcenter-template--tool-section">
+            <label for="autoclose_enabled">Autoluk aktiveret</label>
+            <input id="autoclose_enabled" type="checkbox"
+                   data-ng-model="slide.options.autoclose_enabled">
+
+            <label for="autoclose_timeout">Autoluk efter (antal sekunder)</label>
+            <input id="autoclose_timeout" type="number"
+                   data-ng-model="slide.options.autoclose_timeout">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

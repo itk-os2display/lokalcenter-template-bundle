@@ -9,7 +9,7 @@
     "css": "lokalcenter-touch.css"
   },
   "tools": {
-    "lokalcenter-touch-regions": "../tools/lokalcenter-touch-regions.html"
+    "lokalcenter-touch-regions": "../../../../apps/toolsModule/lokalcenter-touch-regions.html"
   },
   "orientation": "landscape"
 }

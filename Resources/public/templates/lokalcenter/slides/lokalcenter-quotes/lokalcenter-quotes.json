@@ -1,7 +1,7 @@
 {
   "id": "lokalcenter-quotes",
   "type": "slide",
-  "name": "Lokalcenter: Citater",
+  "name": "MSO: Citater",
   "icon": "lokalcenter-quotes.png",
   "paths": {
     "live": "lokalcenter-quotes.html",

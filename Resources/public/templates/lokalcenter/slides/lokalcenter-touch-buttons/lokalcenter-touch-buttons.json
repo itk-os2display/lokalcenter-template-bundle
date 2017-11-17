@@ -1,7 +1,7 @@
 {
   "id": "lokalcenter-touch-buttons",
   "type": "slide",
-  "name": "Lokalcenter: Trykfølsomme knapper",
+  "name": "MSO: Trykfølsomme knapper",
   "icon": "lokalcenter-touch-buttons.png",
   "paths": {
     "live": "lokalcenter-touch-buttons.html",

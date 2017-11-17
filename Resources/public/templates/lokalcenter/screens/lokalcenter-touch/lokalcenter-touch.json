@@ -1,7 +1,7 @@
 {
   "id": "lokalcenter-touch",
   "type": "screen",
-  "name": "Lokalcenter: Trykfølsom",
+  "name": "MSO: Trykfølsom",
   "icon": "lokalcenter-touch.png",
   "paths": {
     "live": "lokalcenter-touch-live.html",

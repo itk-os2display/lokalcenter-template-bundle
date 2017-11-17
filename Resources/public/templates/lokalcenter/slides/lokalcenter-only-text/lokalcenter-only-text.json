@@ -1,7 +1,7 @@
 {
   "id": "lokalcenter-only-text",
   "type": "slide",
-  "name": "Lokalcenter: Tekst",
+  "name": "MSO: Tekst",
   "icon": "lokalcenter-only-text.png",
   "paths": {
     "live": "lokalcenter-only-text.html",

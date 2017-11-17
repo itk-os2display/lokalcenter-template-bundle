@@ -1,7 +1,7 @@
 {
   "id": "lokalcenter-event-calendar",
   "type": "slide",
-  "name": "Lokalcenter: Begivenhedskalender",
+  "name": "MSO: Begivenhedskalender",
   "icon": "lokalcenter-event-calendar.png",
   "paths": {
     "live": "lokalcenter-event-calendar-live.html",

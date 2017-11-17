@@ -1,7 +1,7 @@
 {
   "id": "lokalcenter-header",
   "type": "slide",
-  "name": "Lokalcenter: Header",
+  "name": "MSO: Header",
   "icon": "lokalcenter-header.png",
   "paths": {
     "live": "lokalcenter-header.html",

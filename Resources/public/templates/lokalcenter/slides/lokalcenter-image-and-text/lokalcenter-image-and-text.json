@@ -1,7 +1,7 @@
 {
   "id": "lokalcenter-image-and-text",
   "type": "slide",
-  "name": "Lokalcenter: Billede og tekst",
+  "name": "MSO: Billede og tekst",
   "icon": "lokalcenter-image-and-text.png",
   "paths": {
     "live": "lokalcenter-image-and-text.html",

@@ -31,6 +31,7 @@ $color-middle: #dad9d9;
     height: 17.5%;
     position: absolute;
     bottom: 0;
+    z-index: 1001;
   }
 
   &--middle-left {
@@ -64,7 +65,7 @@ $color-middle: #dad9d9;
     position: fixed;
     top: 100%;
     width: 100%;
-    z-index: 5;
+    z-index: 1000;
     left: 0;
 
     &.show {

@@ -43,10 +43,12 @@ $color-text: #333;
     justify-content: flex-end;
   }
 
+  &--logo-container {
+    padding: .5em 0;
+  }
+
   &--logo {
     max-height: 100%;
-    padding-top: .5em;
-    padding-bottom: .5em;
   }
 
   &--clock {

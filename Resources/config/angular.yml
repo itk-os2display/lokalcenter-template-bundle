@@ -8,7 +8,6 @@ modules:
   toolModule:
     files:
       - bundles/itklokalcentertemplate/apps/toolsModule/lokalcenter-touch-controller.js
-      - bundles/itklokalcentertemplate/apps/toolsModule/lokalcenter-color-picker.js
       - bundles/itklokalcentertemplate/apps/toolsModule/lokalcenter-quotes.js
 
 apps:

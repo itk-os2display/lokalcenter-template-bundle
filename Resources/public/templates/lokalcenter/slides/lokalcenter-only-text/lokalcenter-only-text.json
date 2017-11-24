@@ -27,7 +27,21 @@
   "tools": [
     {
       "name": "Farver",
-      "id": "lokalcenter-color-picker"
+      "id": "itk-color-picker",
+      "config": {
+        "fields": [
+          {
+            "name": "Baggrundsfarve",
+            "field": "color",
+            "theme": "main"
+          },
+          {
+            "name": "Tekstfarve",
+            "field": "textcolor",
+            "theme": "text"
+          }
+        ]
+      }
     },
     {
       "name": "Tekst",

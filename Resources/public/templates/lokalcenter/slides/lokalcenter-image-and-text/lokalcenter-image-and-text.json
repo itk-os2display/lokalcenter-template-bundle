@@ -45,11 +45,12 @@
     },
     {
       "name": "Tekst",
-      "id": "quill-text"
+      "id": "itk-rich-text"
     },
     {
       "name": "Billede",
-      "id": "background-editor"
+      "id": "background-editor",
+      "template": "bundles/itktemplateextension/apps/templateExtensionModule/background-image.html"
     }
   ]
 }

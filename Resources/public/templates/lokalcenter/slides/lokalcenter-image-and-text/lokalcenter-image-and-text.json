@@ -50,7 +50,7 @@
     {
       "name": "Billede",
       "id": "background-editor",
-      "template": "bundles/itktemplateextension/apps/templateExtensionModule/background-image.html"
+      "template": "bundles/itktemplateextension/apps/templateExtensionModule/itk-background-editor.html"
     }
   ]
 }

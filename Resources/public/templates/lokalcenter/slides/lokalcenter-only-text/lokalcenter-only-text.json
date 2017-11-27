@@ -45,7 +45,7 @@
     },
     {
       "name": "Tekst",
-      "id": "quill-text"
+      "id": "itk-rich-text"
     }
   ]
 }

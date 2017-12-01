@@ -1,8 +1,19 @@
 angular.module('toolsModule').controller('ItkLokalcenterTouch', [
   '$scope', function ($scope) {
+
     function setOptions() {
       if (!$scope.data.hasOwnProperty('options')) {
-        $scope.data.options = {};
+        $scope.data.options = {
+          extra_regions: []
+        };
+      }
+
+      // Make sure options is an object.
+      if ($scope.data.options instanceof Array) {
+        $scope.data.options = $scope.data.options.reduce(function (obj, item) {
+          obj[item.id] = item;
+          return obj
+        }, {});
       }
 
       if (!$scope.data.options.hasOwnProperty('extra_regions')) {

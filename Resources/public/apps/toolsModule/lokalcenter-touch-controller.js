@@ -1,7 +1,7 @@
 angular.module('toolsModule').controller('ItkLokalcenterTouch', [
   '$scope', function ($scope) {
     function setOptions() {
-      if ($scope.data.hasOwnProperty('options')) {
+      if (!$scope.data.hasOwnProperty('options')) {
         $scope.data.options = {};
       }
 

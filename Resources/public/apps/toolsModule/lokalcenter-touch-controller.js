@@ -1,14 +1,22 @@
 angular.module('toolsModule').controller('ItkLokalcenterTouch', [
   '$scope', function ($scope) {
+    function setOptions() {
+      if ($scope.data.hasOwnProperty('options')) {
+        $scope.data.options = {};
+      }
+
+      if (!$scope.data.options.hasOwnProperty('extra_regions')) {
+        $scope.data.options.extra_regions = [];
+      }
+    }
+
     /**
      * Add a new hidden region.
      *
      * Max 5 hidden regions.
      */
     $scope.addHiddenRegion = function addHiddenRegion() {
-      if (!$scope.data.options.extra_regions) {
-        $scope.data.options.extra_regions = [];
-      }
+      setOptions();
 
       if ($scope.data.options.extra_regions.length >= 5) {
         return;
@@ -17,7 +25,7 @@ angular.module('toolsModule').controller('ItkLokalcenterTouch', [
       $scope.data.options.extra_regions.push({
         region: 10 + $scope.data.options.extra_regions.length,
         text: "Ny knap"
-      })
+      });
     };
 
     /**

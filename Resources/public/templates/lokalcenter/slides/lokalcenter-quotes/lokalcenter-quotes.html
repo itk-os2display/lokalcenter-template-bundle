@@ -8,7 +8,7 @@
           </svg>
         </div>
         <div class="lokalcenter-quotes--text">
-          <div class="lokalcenter-quotes--quote">{{ quote.quote }}</div>
+          <div data-ng-class="{'lokalcenter-quotes--quote': ikSlide.options.quote_size !== 'small', 'lokalcenter-quotes--quote--two-lines': ikSlide.options.quote_size === 'small'}">{{ quote.quote }}</div>
           <div class="lokalcenter-quotes--author">{{ quote.author}}</div>
         </div>
       </div>

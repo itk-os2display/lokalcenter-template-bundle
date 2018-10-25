@@ -20,7 +20,8 @@
   },
   "empty_options": {
     "fontsize": 16,
-    "quotes": []
+    "quotes": [],
+    "quote_size": "big"
   },
   "tools": [
     {
